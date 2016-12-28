@@ -300,7 +300,15 @@
 			"settings":
 			{
 				"buffer_size": 2149,
-				"line_ending": "Unix"
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Variable.php",
+			"settings":
+			{
+				"buffer_size": 1991,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -365,13 +373,11 @@
 	"expanded_folders":
 	[
 		"/C/laragon/www/hortikultura_app",
+		"/C/laragon/www/hortikultura_app/app",
+		"/C/laragon/www/hortikultura_app/app/Http",
+		"/C/laragon/www/hortikultura_app/app/Http/Controllers",
 		"/C/laragon/www/hortikultura_app/resources",
-		"/C/laragon/www/hortikultura_app/resources/views",
-		"/C/laragon/www/hortikultura_app/resources/views/analisa",
-		"/C/laragon/www/hortikultura_app/resources/views/master",
-		"/C/laragon/www/hortikultura_app/resources/views/master/derajat",
-		"/C/laragon/www/hortikultura_app/vendor/dompdf",
-		"/C/laragon/www/hortikultura_app/vendor/dompdf/dompdf"
+		"/C/laragon/www/hortikultura_app/resources/views"
 	],
 	"file_history":
 	[
@@ -780,7 +786,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -807,7 +813,37 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 549.0,
+						"translation.y": 683.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Variable.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								678
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 404.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1405,7 +1441,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 298.0,
+	"side_bar_width": 276.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
