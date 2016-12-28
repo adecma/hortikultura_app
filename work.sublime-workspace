@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"hortikul",
+				"hortikulturas"
+			],
+			[
+				"variable_",
+				"variable_list"
+			],
+			[
+				"derajat",
+				"derajat_id"
+			],
+			[
+				"holtiku",
+				"holtikultura_id"
+			],
+			[
 				"registrasi",
 				"registrasi_mahasiswa"
 			],
@@ -279,6 +295,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "routes/web.php",
+			"settings":
+			{
+				"buffer_size": 2149,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -340,10 +364,82 @@
 	},
 	"expanded_folders":
 	[
-		"/C/laragon/www/hortikultura_app"
+		"/C/laragon/www/hortikultura_app",
+		"/C/laragon/www/hortikultura_app/resources",
+		"/C/laragon/www/hortikultura_app/resources/views",
+		"/C/laragon/www/hortikultura_app/resources/views/analisa",
+		"/C/laragon/www/hortikultura_app/resources/views/master",
+		"/C/laragon/www/hortikultura_app/resources/views/master/derajat",
+		"/C/laragon/www/hortikultura_app/vendor/dompdf",
+		"/C/laragon/www/hortikultura_app/vendor/dompdf/dompdf"
 	],
 	"file_history":
 	[
+		"/C/laragon/www/hortikultura_app/resources/views/analisa/variable.blade.php",
+		"/C/laragon/www/hortikultura_app/app/Http/Controllers/AnalisaController.php",
+		"/C/laragon/www/hortikultura_app/resources/views/analisa/toPDF.blade.php",
+		"/C/laragon/www/hortikultura_app/app/Variable.php",
+		"/C/laragon/www/hortikultura_app/app/Http/Controllers/HortikulturaController.php",
+		"/C/laragon/www/hortikultura_app/app/Http/Controllers/DerajatController.php",
+		"/C/laragon/www/hortikultura_app/app/Hortikultura.php",
+		"/C/laragon/www/hortikultura_app/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php",
+		"/C/laragon/www/hortikultura_app/resources/views/static/about.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/index.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/toPDF.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/variable/toPDF.blade.php",
+		"/C/laragon/www/hortikultura_app/app/Http/Controllers/VariableController.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/index.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/variable/index.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/toPDF.blade.php",
+		"/C/laragon/www/hortikultura_app/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+		"/C/laragon/www/hortikultura_app/resources/views/static/welcome.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/static/kontak.blade.php",
+		"/C/laragon/www/hortikultura_app/app/Http/Controllers/HomeController.php",
+		"/C/laragon/www/hortikultura_app/resources/views/layouts/app_menu.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/layouts/app_menu_sidebar.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/layouts/app.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/welcome.blade.php",
+		"/C/laragon/www/hortikultura_app/app/Helpers/Calculate.php",
+		"/C/laragon/www/hortikultura_app/composer.json",
+		"/C/laragon/www/hortikultura_app/config/app.php",
+		"/C/laragon/www/hortikultura_app/app/Providers/AppServiceProvider.php",
+		"/C/laragon/www/hortikultura_app/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
+		"/C/laragon/www/hortikultura_app/vendor/laravel/framework/src/Illuminate/Contracts/View/View.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/_form.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/create.blade.php",
+		"/C/laragon/www/hortikultura_app/app/Derajat.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/edit.blade.php",
+		"/C/laragon/www/hortikultura_app/database/migrations/2016_12_19_232400_create_derajats_table.php",
+		"/C/laragon/www/hortikultura_app/gulpfile.js",
+		"/C/laragon/www/hortikultura_app/resources/views/master/variable/_form.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/variable/create.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/variable/edit.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/edit.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/profile/show.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/create.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/_form.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/profile/edit.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/_aksi.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/auth/register.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/auth/login.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/auth/passwords/email.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/auth/passwords/reset.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/assets/sass/app.scss",
+		"/C/laragon/www/hortikultura_app/resources/assets/sass/_variables.scss",
+		"/C/laragon/www/hortikultura_app/resources/views/home.blade.php",
+		"/C/Users/user_id/AppData/Local/Temp/Rar$DIa0.226/_navbar.scss",
+		"/C/laragon/www/hortikultura_app/database/seeds/DatabaseSeeder.php",
+		"/C/laragon/www/hortikultura_app/database/migrations/2016_12_19_233717_create_hortikultura_variable_table.php",
+		"/C/laragon/www/hortikultura_app/database/seeds/NilaiSeeder.php",
+		"/C/laragon/www/hortikultura_app/database/seeds/DerajatSeeder.php",
+		"/C/laragon/www/hortikultura_app/database/migrations/2016_12_19_231815_create_hortikulturas_table.php",
+		"/C/laragon/www/hortikultura_app/database/seeds/HortikulturaSeeder.php",
+		"/C/laragon/www/hortikultura_app/database/seeds/TanamanSeeder.php",
+		"/C/laragon/www/hortikultura_app/database/migrations/2016_12_19_225011_create_tanamans_table.php",
+		"/C/laragon/www/hortikultura_app/database/seeds/UserSeeder.php",
+		"/C/laragon/www/hortikultura_app/database/seeds/VariableSeeder.php",
+		"/C/laragon/www/hortikultura_app/database/migrations/2016_12_19_230336_create_variables_table.php",
+		"/C/laragon/www/hortikultura_app/.env",
 		"/C/laragon/www/monitoring_app/app/RegistrasiMatakuliah.php",
 		"/C/laragon/www/monitoring_app/app/RegistrasiMahasiswa.php",
 		"/C/laragon/www/monitoring_app/app/Http/Controllers/RegistrasiMahasiswaController.php",
@@ -406,76 +502,11 @@
 		"/C/laragon/www/monitoring_app/resources/assets/css/datatables.bootstrap.css",
 		"/C/laragon/www/monitoring_app/resources/assets/css/jquery.dataTables.min.css",
 		"/C/laragon/www/monitoring_app/vendor/laravel/framework/src/Illuminate/Http/Request.php",
-		"/C/laragon/www/monitoring_app/resources/assets/js/custom-app.js",
-		"/C/laragon/www/monitoring_app/resources/views/auth/passwords/reset.blade.php",
-		"/C/laragon/www/monitoring_app/resources/views/auth/passwords/email.blade.php",
-		"/C/laragon/www/monitoring_app/resources/views/auth/register.blade.php",
-		"/C/laragon/www/monitoring_app/resources/views/layouts/app_clean.blade.php",
-		"/C/laragon/www/monitoring_app/app/Aspek.php",
-		"/C/laragon/www/monitoring_app/public/js/app.js",
-		"/C/laragon/www/monitoring_app/config/database.php",
-		"/C/laragon/www/monitoring_app/database/seeds/DatabaseSeeder.php",
-		"/C/laragon/www/monitoring_app/database/seeds/AspekNilaiSeeder.php",
-		"/C/laragon/www/monitoring_app/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php",
-		"/C/laragon/www/monitoring_app/database/migrations/2016_12_06_160133_create_aspek_nilai_table.php",
-		"/C/laragon/www/monitoring_app/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php",
-		"/C/laragon/www/monitoring_app/database/seeds/RegistrasiMahasiswaSeeder.php",
-		"/C/laragon/www/monitoring_app/database/seeds/RegistrasiMahasiswa.php",
-		"/C/laragon/www/monitoring_app/app/Semester.php",
-		"/C/laragon/www/monitoring_app/app/Jurusan.php",
-		"/C/laragon/www/monitoring_app/database/migrations/2016_12_05_171903_create_matakuliahs_table.php",
-		"/C/laragon/www/monitoring_app/database/migrations/2016_12_06_040623_create_registrasi_matakuliah_table.php",
-		"/C/laragon/www/monitoring_app/database/seeds/RegistrasiMatakuliahSeeder.php",
-		"/C/laragon/www/monitoring_app/database/seeds/MatakuliahSeeder.php",
-		"/C/laragon/www/monitoring_app/database/seeds/UserSeeder.php",
-		"/C/laragon/www/monitoring_app/database/seeds/SampleDataSeeder.php",
-		"/C/laragon/www/monitoring_app/database/seeds/AspekSeeder.php",
-		"/C/laragon/www/monitoring_app/database/seeds/PeriodeSeeder.php",
-		"/C/laragon/www/monitoring_app/database/seeds/SemesterSeeder.php",
-		"/C/laragon/www/monitoring_app/database/seeds/KompetensiSeeder.php",
-		"/C/laragon/www/monitoring_app/database/seeds/JurusanSeeder.php",
-		"/C/laragon/www/monitoring_app/database/seeds/RoleSeeder.php",
-		"/C/laragon/www/monitoring_app/database/migrations/2016_12_06_075123_create_column_no_induk_into_users_table.php",
-		"/C/laragon/www/monitoring_app/app/Kompetensi.php",
-		"/C/laragon/www/monitoring_app/database/migrations/2016_12_05_163251_create_jurusan_user_table.php",
-		"/C/laragon/www/monitoring_app/database/migrations/2016_12_06_063008_create_registrasi_mahasiswa_table.php",
-		"/C/laragon/www/monitoring_app/database/migrations/2016_12_05_170425_create_aspeks_table.php",
-		"/C/laragon/www/monitoring_app/app/Periode.php",
-		"/C/laragon/www/monitoring_app/database/migrations/2016_12_05_173909_create_periodes_table.php",
-		"/C/laragon/www/monitoring_app/database/migrations/2016_12_05_172346_create_matakuliah_user.php",
-		"/C/laragon/www/monitoring_app/database/migrations/2016_12_05_170634_create_aspek_kompetensi_table.php",
-		"/C/laragon/www/monitoring_app/database/migrations/2016_12_05_170403_create_kompetensis_table.php",
-		"/C/laragon/www/monitoring_app/app/Role.php",
-		"/C/laragon/www/monitoring_app/app/Permission.php",
-		"/C/laragon/www/monitoring_app/app/Http/Kernel.php",
-		"/C/laragon/www/monitoring_app/database/migrations/2016_12_05_162627_create_jurusans_table.php",
-		"/C/laragon/www/generus_app/resources/views/desa/jurnal/_form.blade.php",
-		"/C/laragon/www/generus_app/resources/views/desa/jurnal/create.blade.php",
-		"/C/laragon/www/generus_app/app/Jurnal.php",
-		"/C/laragon/www/generus_app/resources/views/desa/jurnal/edit.blade.php",
-		"/C/laragon/www/generus_app/resources/views/desa/jurnal/show.blade.php",
-		"/C/laragon/www/generus_app/resources/views/desa/jurnal/index.blade.php",
-		"/C/laragon/www/generus_app/database/migrations/2016_11_28_115700_add_column_kelompok_on_jurnals_table.php",
-		"/C/laragon/www/generus_app/app/Gen.php",
-		"/C/laragon/www/generus_app/app/Http/Controllers/GenController.php",
-		"/C/laragon/www/generus_app/app/Http/Controllers/UserController.php",
-		"/C/laragon/www/generus_app/app/Http/Controllers/RoleController.php",
-		"/C/laragon/www/generus_app/app/Http/Controllers/PermissionController.php",
-		"/C/laragon/www/generus_app/app/Http/Controllers/KelompokController.php",
-		"/C/laragon/www/generus_app/app/Http/Controllers/KategoriController.php",
-		"/C/laragon/www/generus_app/vendor/laravel/framework/src/Illuminate/Support/Collection.php",
-		"/C/laragon/www/generus_app/config/app.php",
-		"/C/laragon/www/generus_app/.env",
-		"/C/laragon/www/generus_app/app/Http/Controllers/HomeController.php",
-		"/C/laragon/www/generus_app/resources/views/welcome.blade.php",
-		"/C/laragon/www/generus_app/resources/views/profile/profile.blade.php",
-		"/C/laragon/www/generus_app/resources/views/desa/user/index.blade.php",
-		"/C/laragon/www/generus_app/app/User.php",
-		"/C/laragon/www/generus_app/app/Providers/EventServiceProvider.php"
+		"/C/laragon/www/monitoring_app/resources/assets/js/custom-app.js"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -489,6 +520,47 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"then",
+			"when",
+			"nested",
+			"                        ",
+			"td",
+			"sedang",
+			"rendah",
+			"variable",
+			"variable.",
+			"$variable",
+			"$variables",
+			"Variable::",
+			"kompetensi",
+			"					",
+			"variable",
+			"hortikultura",
+			"Hortikultura",
+			"$hortikultura",
+			"Hortikultura",
+			"Tanaman hortikultura",
+			"$datavariables",
+			"hortikultura.",
+			"$dataHortikulturas",
+			"$hortikulturas",
+			"Hortikultura::",
+			"kd",
+			"->kd",
+			"					",
+			"kompetensi.",
+			"$kd",
+			"                    ",
+			"navbar-default-bg",
+			"laravel-border-color",
+			"Matakuliah",
+			"$matakuliah",
+			"Matakuliah",
+			"matakuliah.",
+			"$dataMatakuliahs",
+			"$matakuliahs",
+			"Matakuliah::",
+			"hortikulturas",
 			"exists",
 			"semester",
 			"_list",
@@ -575,48 +647,7 @@
 			"fresh",
 			"search?q=",
 			"search",
-			"avatar",
-			"description",
-			"tg_lahir",
-			"display_name",
-			"name",
-			"role",
-			"roles",
-			"role",
-			"roles",
-			"Role::",
-			"permissions_list",
-			"keterangan",
-			"kategori",
-			"kategoris",
-			"permissions",
-			"Permission::",
-			"role",
-			"roles",
-			"Role::",
-			"display_nama",
-			"name",
-			"role",
-			"roles",
-			"role",
-			"roles",
-			"Role::",
-			"user",
-			"access_list",
-			"role",
-			"permissions_list",
-			"description",
-			"display_name",
-			"Permission::",
-			"permissions",
-			"role",
-			"roles",
-			"role",
-			"roles",
-			"Role::",
-			"permissions_list",
-			"kategori_id",
-			"role"
+			"avatar"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -624,6 +655,39 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"th",
+			"tinggi",
+			"sedang",
+			"derajat",
+			"derajat.",
+			"$derajat",
+			"$derajats",
+			"Derajat::",
+			"variable",
+			"",
+			"derajat",
+			"variable",
+			"$variable",
+			"Variable ",
+			"$dataVariables",
+			"variable.",
+			"$datavariables",
+			"$variables",
+			"Variable::",
+			"->id",
+			"",
+			"hortikultura.",
+			"$id",
+			"",
+			"Hortikultura",
+			"$hortikultura",
+			"Hortikultura",
+			"hortikultura.",
+			"$dataHortikulturas",
+			"$hortikulturas",
+			"Hortikultura::",
+			"hortikulturas",
 			"",
 			"registrasi.",
 			".matakuliah.",
@@ -716,8 +780,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "routes/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2117,
+								2117
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 549.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -760,7 +855,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 48.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -769,6 +864,162 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"hortik",
+				"app\\Http\\Controllers\\HortikulturaController.php"
+			],
+			[
+				"analisa",
+				"app\\Http\\Controllers\\AnalisaController.php"
+			],
+			[
+				"hortiku",
+				"app\\Hortikultura.php"
+			],
+			[
+				"varia",
+				"app\\Variable.php"
+			],
+			[
+				"horti",
+				"app\\Hortikultura.php"
+			],
+			[
+				"vari",
+				"app\\Variable.php"
+			],
+			[
+				"derajat",
+				"app\\Http\\Controllers\\DerajatController.php"
+			],
+			[
+				"derajatcontr",
+				"app\\Http\\Controllers\\DerajatController.php"
+			],
+			[
+				"variablec",
+				"app\\Http\\Controllers\\VariableController.php"
+			],
+			[
+				"hortikul",
+				"app\\Http\\Controllers\\HortikulturaController.php"
+			],
+			[
+				"app_menu",
+				"resources\\views\\layouts\\app_menu.blade.php"
+			],
+			[
+				"app.bla",
+				"resources\\views\\layouts\\app.blade.php"
+			],
+			[
+				"homecontr",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"app",
+				"config\\app.php"
+			],
+			[
+				"comp",
+				"composer.json"
+			],
+			[
+				"derajats",
+				"database\\migrations\\2016_12_19_232400_create_derajats_table.php"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"variablecon",
+				"app\\Http\\Controllers\\VariableController.php"
+			],
+			[
+				"derajatcon",
+				"app\\Http\\Controllers\\DerajatController.php"
+			],
+			[
+				"hortikultura",
+				"app\\Http\\Controllers\\HortikulturaController.php"
+			],
+			[
+				"app.b",
+				"resources\\views\\layouts\\app.blade.php"
+			],
+			[
+				"homecon",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"homec",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"home",
+				"resources\\views\\home.blade.php"
+			],
+			[
+				"app.blade",
+				"resources\\views\\layouts\\app.blade.php"
+			],
+			[
+				"web",
+				"routes\\web.php"
+			],
+			[
+				"nilaiseede",
+				"database\\seeds\\NilaiSeeder.php"
+			],
+			[
+				"derajatsee",
+				"database\\seeds\\DerajatSeeder.php"
+			],
+			[
+				"deraja",
+				"app\\Derajat.php"
+			],
+			[
+				"hortikulturas",
+				"database\\seeds\\HortikulturaSeeder.php"
+			],
+			[
+				"tanamen",
+				"database\\seeds\\TanamanSeeder.php"
+			],
+			[
+				"tanamansee",
+				"database\\seeds\\TanamanSeeder.php"
+			],
+			[
+				"tanaman",
+				"database\\migrations\\2016_12_19_225011_create_tanamans_table.php"
+			],
+			[
+				"database",
+				"database\\seeds\\DatabaseSeeder.php"
+			],
+			[
+				"variablesee",
+				"database\\seeds\\VariableSeeder.php"
+			],
+			[
+				"variables",
+				"database\\migrations\\2016_12_19_230336_create_variables_table.php"
+			],
+			[
+				"tanamans",
+				"database\\migrations\\2016_12_19_225011_create_tanamans_table.php"
+			],
+			[
+				"usersee",
+				"database\\seeds\\UserSeeder.php"
+			],
 			[
 				"periodec",
 				"app\\Http\\Controllers\\PeriodeController.php"
@@ -780,10 +1031,6 @@
 			[
 				"registrasima",
 				"app\\RegistrasiMahasiswa.php"
-			],
-			[
-				"app_menu",
-				"resources\\views\\layouts\\app_menu.blade.php"
 			],
 			[
 				"registrasimahasi",
@@ -826,32 +1073,8 @@
 				"app\\Http\\Controllers\\MatakuliahController.php"
 			],
 			[
-				"homec",
-				"app\\Http\\Controllers\\HomeController.php"
-			],
-			[
-				"homecon",
-				"app\\Http\\Controllers\\HomeController.php"
-			],
-			[
-				"app.bla",
-				"resources\\views\\layouts\\app.blade.php"
-			],
-			[
-				"gulp",
-				"gulpfile.js"
-			],
-			[
-				"app",
-				"config\\app.php"
-			],
-			[
 				"com",
 				"composer.json"
-			],
-			[
-				"gul",
-				"gulpfile.js"
 			],
 			[
 				".env",
@@ -864,14 +1087,6 @@
 			[
 				"usercon",
 				"app\\Http\\Controllers\\UserController.php"
-			],
-			[
-				"app.blade",
-				"resources\\views\\layouts\\app.blade.php"
-			],
-			[
-				"web",
-				"routes\\web.php"
 			],
 			[
 				"user",
@@ -904,10 +1119,6 @@
 			[
 				"registra",
 				"app\\RegistrasiMahasiswa.php"
-			],
-			[
-				"database",
-				"config\\database.php"
 			],
 			[
 				"builder",
@@ -1058,10 +1269,6 @@
 				"app\\Http\\Controllers\\GenController.php"
 			],
 			[
-				"home",
-				"app\\Http\\Controllers\\HomeController.php"
-			],
-			[
 				"logge",
 				"database\\migrations\\2016_11_22_010545_add_column_last_logged_in_at_on_users_table.php"
 			],
@@ -1168,118 +1375,6 @@
 			[
 				"kelom",
 				"app\\Kelompok.php"
-			],
-			[
-				"kategori",
-				"app\\Kategori.php"
-			],
-			[
-				"kelo",
-				"app\\Kelompok.php"
-			],
-			[
-				"kelompo",
-				"app\\Kelompok.php"
-			],
-			[
-				"addcol",
-				"database\\migrations\\2016_11_11_061339_add_column_timestamps_and_desc_into_kelompok_user_table.php"
-			],
-			[
-				"add_",
-				"database\\migrations\\2016_11_11_061339_add_column_timestamps_and_desc_into_kelompok_user_table.php"
-			],
-			[
-				"kelompokuser",
-				"database\\migrations\\2016_11_11_021118_create_kelompok_user_table.php"
-			],
-			[
-				"facade",
-				"vendor\\laravelcollective\\html\\src\\FormFacade.php"
-			],
-			[
-				"laravelcollective",
-				"vendor\\laravelcollective\\html\\readme.md"
-			],
-			[
-				"genseede",
-				"database\\seeds\\GenSeeder.php"
-			],
-			[
-				"kelm",
-				"app\\Kelompok.php"
-			],
-			[
-				"kategoriid",
-				"database\\migrations\\2016_11_09_024546_add_column_kategori_id_on_gens_table.php"
-			],
-			[
-				"katego",
-				"database\\seeds\\KategoriSeeder.php"
-			],
-			[
-				"kategr",
-				"database\\migrations\\2016_11_09_023658_create_kategoris_table.php"
-			],
-			[
-				"kelompoksee",
-				"database\\seeds\\KelompokSeeder.php"
-			],
-			[
-				"kelompoks",
-				"database\\migrations\\2016_11_09_015208_create_kelompoks_table.php"
-			],
-			[
-				"welc",
-				"resources\\views\\welcome.blade.php"
-			],
-			[
-				"usercontr",
-				"app\\Http\\Controllers\\UserController.php"
-			],
-			[
-				"welcome",
-				"resources\\views\\welcome.blade.php"
-			],
-			[
-				"kelompokanddesa",
-				"database\\migrations\\2016_11_04_145329_add_column_kelompok_and_desa_into_users.php"
-			],
-			[
-				"gense",
-				"database\\seeds\\GenSeeder.php"
-			],
-			[
-				"menu",
-				"resources\\views\\layouts\\_menu.blade.php"
-			],
-			[
-				"route",
-				"vendor\\symfony\\routing\\Route.php"
-			],
-			[
-				"userssee",
-				"database\\seeds\\UsersSeeder.php"
-			],
-			[
-				"web.p",
-				"routes\\web.php"
-			],
-			[
-				"auth",
-				"app\\Http\\Controllers\\Auth\\AuthController.php"
-			],
-			[
-				"masterperiodecontr",
-				"app\\Http\\Controllers\\MasterPeriodeController.php"
-			],
-			[
-				"masterpernyataa",
-				"database\\seeds\\MasterPernyataanAnakSeeder.php"
-			],
-			[
-				"masterpernya",
-				"app\\MasterPernyataanAnak.php"
 			]
 		],
 		"width": 0.0
@@ -1310,7 +1405,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 226.0,
+	"side_bar_width": 298.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

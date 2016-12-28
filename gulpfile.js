@@ -17,3 +17,19 @@ elixir((mix) => {
     mix.sass('app.scss')
        .webpack('app.js');
 });
+
+elixir(function(mix) {
+    mix.styles([
+        'jquery.dataTables.min.css',
+        'font-awesome.min.css',
+        'select2.min.css',
+    ]);
+});
+
+elixir(function(mix) {
+    mix.scripts([
+        'jquery.dataTables.min.js',
+        'select2.min.js',
+        'custom-app.js',
+    ]);
+});
