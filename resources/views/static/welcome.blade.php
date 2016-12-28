@@ -3,7 +3,7 @@
 @section('content')
     <div class="panel panel-success">
         <div class="panel-body">
-        	<h3>Beranda</h3>
+        	<h3>Home</h3>
         	<p class="text-center">
         		<img src="/images/hortikultura.jpg" style="height:320px; margin:0 auto; display: inline;" alt="PT. Intraco Penta Prima Service" class="img-responsive">
         	</p>
