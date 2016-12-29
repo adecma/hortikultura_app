@@ -38,7 +38,7 @@
                             <table class="tg">
                                 <thead>
                                     <tr>
-                                        <th class="tg-3wr7">#</th>
+                                        <th class="tg-3wr7">No</th>
                                         <th class="tg-3wr7">Derajat</th>
                                         <th class="tg-3wr7">Rendah</th>
                                         <th class="tg-3wr7">Sedang</th>
@@ -50,9 +50,9 @@
                                         <tr>
                                             <td class="tg-rv4w" width="10%">{{ $no++ }}</td>
                                             <td class="tg-rv4w" width="30%">{{ $derajat->namavariable}}</td>
-                                            <td class="tg-rv4w" width="20%">{{ $derajat->rendah }}</td>
-                                            <td class="tg-rv4w" width="20%">{{ $derajat->sedang }}</td>
-                                            <td class="tg-rv4w" width="20%">{{ $derajat->tinggi }}</td>
+                                            <td class="tg-ti5e" width="20%">{{ $derajat->rendah }}</td>
+                                            <td class="tg-ti5e" width="20%">{{ $derajat->sedang }}</td>
+                                            <td class="tg-ti5e" width="20%">{{ $derajat->tinggi }}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>

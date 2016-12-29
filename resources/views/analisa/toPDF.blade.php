@@ -37,10 +37,11 @@
                     @foreach($variables as $var)
                         <li>
                         <strong>{{ $var->name }}</strong>
+                            <br><br>
                             <table class="tg">
                                 <thead>
                                     <tr>
-                                        <th class="tg-3wr7">#</th>
+                                        <th class="tg-3wr7">No</th>
                                         <th class="tg-3wr7">Tanaman Hortikultura</th>
                                         <th class="tg-3wr7">{{ $var->name }}</th>
                                         <th class="tg-3wr7">Rendah</th>
@@ -53,10 +54,10 @@
                                         <tr>
                                             <td class="tg-rv4w" width="10%">{{ $no++ }}</td>
                                             <td class="tg-rv4w" width="30%">{{ $horti->name }}</td>
-                                            <td class="tg-rv4w" width="20%">{{ $horti->pivot->nilai }}</td>
-                                            <td class="tg-rv4w" width="20%">{{ round($horti->hit_rendah,2) }}</td>
-                                            <td class="tg-rv4w" width="20%">{{ round($horti->hit_sedang,2) }}</td>
-                                            <td class="tg-rv4w" width="20%">{{ round($horti->hit_tinggi,2) }}</td>
+                                            <td class="tg-ti5e" width="20%">{{ $horti->pivot->nilai }}</td>
+                                            <td class="tg-ti5e" width="20%">{{ round($horti->hit_rendah,2) }}</td>
+                                            <td class="tg-ti5e" width="20%">{{ round($horti->hit_sedang,2) }}</td>
+                                            <td class="tg-ti5e" width="20%">{{ round($horti->hit_tinggi,2) }}</td>
                                         </tr>
 
                                         @if($loop->last)
@@ -67,7 +68,7 @@
                                     @endforeach
                                 </tbody>
                             </table>
-                            <br>
+                            <br><br>
                         </li>
                     @endforeach
                     </ol>

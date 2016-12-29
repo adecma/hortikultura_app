@@ -38,7 +38,7 @@
                             <table class="tg">
                                 <thead>
                                     <tr>
-                                        <th class="tg-3wr7">#</th>
+                                        <th class="tg-3wr7">No</th>
                                         <th class="tg-3wr7">Nama Tanaman</th>
                                     </tr>
                                 </thead>

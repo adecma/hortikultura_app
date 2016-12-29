@@ -18,7 +18,7 @@ class AnalisaController extends Controller
     	$variables = Variable::join('derajats', 'variables.id', '=', 'derajats.variable_id')
     		->with('variable')->get();
    	
-    	return view('analisa.variable', compact('variables'))->with(['no' => 1]);
+    	return view('analisa.variable', compact('variables'))->with(['no' => 1, 'numA' => 1, 'numB' => 1]);
     }
 
     public function toPDF($time)

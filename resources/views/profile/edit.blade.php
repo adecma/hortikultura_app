@@ -3,7 +3,7 @@
 @section('content')
 	<div class="col-md-12">
 		<div class="panel panel-info">
-			<div class="panel-heading">Profile > Edit</div>
+			<div class="panel-heading">Profil > Edit</div>
 
 			{!! Form::model($user, ['route' => 'profile.update']) !!}
 				<div class="panel-body">
