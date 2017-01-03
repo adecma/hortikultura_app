@@ -302,22 +302,6 @@
 				"buffer_size": 2149,
 				"line_ending": "Windows"
 			}
-		},
-		{
-			"file": "resources/views/analisa/variable.blade.php",
-			"settings":
-			{
-				"buffer_size": 1843,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/AnalisaController.php",
-			"settings":
-			{
-				"buffer_size": 842,
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
@@ -381,41 +365,56 @@
 	"expanded_folders":
 	[
 		"/C/laragon/www/hortikultura_app",
-		"/C/laragon/www/hortikultura_app/app",
 		"/C/laragon/www/hortikultura_app/app/Http",
 		"/C/laragon/www/hortikultura_app/app/Http/Controllers",
 		"/C/laragon/www/hortikultura_app/resources",
+		"/C/laragon/www/hortikultura_app/resources/assets/css",
+		"/C/laragon/www/hortikultura_app/resources/assets/js",
 		"/C/laragon/www/hortikultura_app/resources/views",
-		"/C/laragon/www/hortikultura_app/resources/views/analisa",
-		"/C/laragon/www/hortikultura_app/resources/views/auth",
-		"/C/laragon/www/hortikultura_app/resources/views/master"
+		"/C/laragon/www/hortikultura_app/resources/views/master/derajat",
+		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura",
+		"/C/laragon/www/hortikultura_app/resources/views/master/variable",
+		"/C/laragon/www/hortikultura_app/resources/views/profile",
+		"/C/laragon/www/hortikultura_app/resources/views/static"
 	],
 	"file_history":
 	[
+		"/C/laragon/www/hortikultura_app/resources/views/analisa/variable.blade.php",
+		"/C/laragon/www/hortikultura_app/app/Http/Controllers/AnalisaController.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/variable/create.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/variable/edit.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/static/home.blade.php",
+		"/C/laragon/www/hortikultura_app/app/Http/Controllers/DerajatController.php",
+		"/C/laragon/www/hortikultura_app/app/Http/Controllers/HortikulturaController.php",
+		"/C/laragon/www/hortikultura_app/app/Http/Controllers/VariableController.php",
+		"/C/laragon/www/hortikultura_app/resources/views/auth/login.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/index.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/create.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/profile/show.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/variable/index.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/edit.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/create.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/index.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/edit.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/variable/_aksi.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/_aksi.blade.php",
+		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/_aksi.blade.php",
+		"/C/laragon/www/hortikultura_app/.gitignore",
+		"/C/laragon/www/hortikultura_app/resources/assets/js/jquery.dataTables.min.js",
 		"/C/laragon/www/hortikultura_app/resources/views/analisa/toPDF.blade.php",
 		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/toPDF.blade.php",
 		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/toPDF.blade.php",
 		"/C/laragon/www/hortikultura_app/resources/views/master/variable/toPDF.blade.php",
 		"/C/laragon/www/hortikultura_app/resources/views/layouts/app_menu.blade.php",
 		"/C/laragon/www/hortikultura_app/resources/views/layouts/app.blade.php",
-		"/C/laragon/www/hortikultura_app/resources/views/profile/show.blade.php",
 		"/C/laragon/www/hortikultura_app/resources/views/profile/edit.blade.php",
-		"/C/laragon/www/hortikultura_app/resources/views/auth/login.blade.php",
 		"/C/laragon/www/hortikultura_app/resources/views/static/about.blade.php",
 		"/C/laragon/www/hortikultura_app/resources/views/static/welcome.blade.php",
 		"/C/laragon/www/hortikultura_app/readme.md",
 		"/C/laragon/www/hortikultura_app/app/Variable.php",
 		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/_form.blade.php",
-		"/C/laragon/www/hortikultura_app/resources/views/analisa/variable.blade.php",
-		"/C/laragon/www/hortikultura_app/app/Http/Controllers/AnalisaController.php",
-		"/C/laragon/www/hortikultura_app/app/Http/Controllers/HortikulturaController.php",
-		"/C/laragon/www/hortikultura_app/app/Http/Controllers/DerajatController.php",
 		"/C/laragon/www/hortikultura_app/app/Hortikultura.php",
 		"/C/laragon/www/hortikultura_app/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php",
-		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/index.blade.php",
-		"/C/laragon/www/hortikultura_app/app/Http/Controllers/VariableController.php",
-		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/index.blade.php",
-		"/C/laragon/www/hortikultura_app/resources/views/master/variable/index.blade.php",
 		"/C/laragon/www/hortikultura_app/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
 		"/C/laragon/www/hortikultura_app/resources/views/static/kontak.blade.php",
 		"/C/laragon/www/hortikultura_app/app/Http/Controllers/HomeController.php",
@@ -427,18 +426,11 @@
 		"/C/laragon/www/hortikultura_app/app/Providers/AppServiceProvider.php",
 		"/C/laragon/www/hortikultura_app/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
 		"/C/laragon/www/hortikultura_app/vendor/laravel/framework/src/Illuminate/Contracts/View/View.php",
-		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/create.blade.php",
 		"/C/laragon/www/hortikultura_app/app/Derajat.php",
-		"/C/laragon/www/hortikultura_app/resources/views/master/derajat/edit.blade.php",
 		"/C/laragon/www/hortikultura_app/database/migrations/2016_12_19_232400_create_derajats_table.php",
 		"/C/laragon/www/hortikultura_app/gulpfile.js",
 		"/C/laragon/www/hortikultura_app/resources/views/master/variable/_form.blade.php",
-		"/C/laragon/www/hortikultura_app/resources/views/master/variable/create.blade.php",
-		"/C/laragon/www/hortikultura_app/resources/views/master/variable/edit.blade.php",
-		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/edit.blade.php",
-		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/create.blade.php",
 		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/_form.blade.php",
-		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura/_aksi.blade.php",
 		"/C/laragon/www/hortikultura_app/resources/views/auth/register.blade.php",
 		"/C/laragon/www/hortikultura_app/resources/views/auth/passwords/email.blade.php",
 		"/C/laragon/www/hortikultura_app/resources/views/auth/passwords/reset.blade.php",
@@ -514,12 +506,7 @@
 		"/C/laragon/www/monitoring_app/app/User.php",
 		"/C/laragon/www/monitoring_app/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
 		"/C/laragon/www/monitoring_app/resources/views/auth/login.blade.php",
-		"/C/laragon/www/monitoring_app/vendor/laravel/framework/src/Illuminate/Routing/Redirector.php",
-		"/C/laragon/www/monitoring_app/routes/web.php",
-		"/C/laragon/www/monitoring_app/vendor/yajra/laravel-datatables-oracle/src/Html/Builder.php",
-		"/C/laragon/www/monitoring_app/resources/assets/css/datatables.bootstrap.css",
-		"/C/laragon/www/monitoring_app/resources/assets/css/jquery.dataTables.min.css",
-		"/C/laragon/www/monitoring_app/vendor/laravel/framework/src/Illuminate/Http/Request.php"
+		"/C/laragon/www/monitoring_app/vendor/laravel/framework/src/Illuminate/Routing/Redirector.php"
 	],
 	"find":
 	{
@@ -537,6 +524,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Search",
+			"Search:",
+			"entries",
+			"search",
 			"text-justify",
 			"then",
 			"when",
@@ -660,11 +651,7 @@
 			"', 'jurusan_kd'",
 			"', 'user_id'",
 			"taufik@",
-			"kd_jurusan",
-			"reload",
-			"fresh",
-			"search?q=",
-			"search"
+			"kd_jurusan"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -798,7 +785,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -825,69 +812,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 503.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "resources/views/analisa/variable.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1843,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								741,
-								741
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 72.0,
+						"translation.y": 413.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/Http/Controllers/AnalisaController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 842,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								457,
-								457
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 170.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]

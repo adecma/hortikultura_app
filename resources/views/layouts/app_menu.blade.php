@@ -1,3 +1,3 @@
-<li><a href="#"><i class="fa fa-check-circle-o"></i> Konsultasi</a></li>
+<li class="{!! substr(Route::currentRouteName(), 0, 10) == 'konsultasi' ? 'active' : '' !!}"><a href="{{ route('konsultasi.index') }}"><i class="fa fa-check-circle-o"></i> Konsultasi</a></li>
 <li class="{!! substr(Route::currentRouteName(), 0, 5) == 'about' ? 'active' : '' !!}"><a href="{{ route('about') }}"><i class="fa fa-info"></i> Tentang</a></li>
 <li class="{!! substr(Route::currentRouteName(), 0, 6) == 'kontak' ? 'active' : '' !!}"><a href="{{ route('kontak') }}"><i class="fa fa-address-card-o"></i> Kontak</a></li>

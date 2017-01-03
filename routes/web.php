@@ -29,6 +29,10 @@ Route::get('/kontak', function () {
     return view('static.kontak');
 })->name('kontak');
 
+Route::get('/konsultasi', function(){
+    return view('konsultasi.index');
+})->name('konsultasi.index');
+
 Route::group(['middleware' => 'auth'], function() {
 	//beranda
 	Route::get('/home', 'HomeController@index');
