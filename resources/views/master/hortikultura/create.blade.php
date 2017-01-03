@@ -3,7 +3,7 @@
 @section('content')
 	<div class="col-md-12">
 		<div class="panel panel-primary">
-			<div class="panel-heading"><i class="fa fa-plus"></i> Hortikultura > Create</div>
+			<div class="panel-heading"><i class="fa fa-plus"></i> Master Holtikultura > Tambah</div>
 			
 			{!! Form::open(['route' => 'hortikultura.store']) !!}
 				<div class="panel-body">

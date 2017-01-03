@@ -8,7 +8,7 @@
 			</div>
 			<div class="panel-body">
 				<p>
-					<a href="{{ route('analisa.topdf', time()) }}" class="btn btn-xs btn-warning"><i class="fa fa-print"></i> Print</a>
+					<a href="{{ route('analisa.topdf', time()) }}" class="btn btn-xs btn-warning"><i class="fa fa-print"></i> Cetak</a>
 				</p>
 				<div class="panel-group" id="accordion">
 				@foreach($variables as $var)

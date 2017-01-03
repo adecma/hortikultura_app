@@ -3,7 +3,7 @@
 @section('content')
 	<div class="col-md-12">
 		<div class="panel panel-primary">
-			<div class="panel-heading"><i class="fa fa-plus"></i> Hortikultura > Edit</div>
+			<div class="panel-heading"><i class="fa fa-plus"></i> Master Holtikultura > Edit</div>
 			
 			{!! Form::model($hortikultura, ['route' => ['hortikultura.update', $hortikultura->id], 'method' => 'put']) !!}
 				<div class="panel-body">

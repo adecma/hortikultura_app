@@ -3,7 +3,7 @@
 @section('content')
 	<div class="col-md-12">
 		<div class="panel panel-primary">
-			<div class="panel-heading"><i class="fa fa-plus"></i> derajat > Edit</div>
+			<div class="panel-heading"><i class="fa fa-plus"></i> Master Derajat > Edit</div>
 			
 			{!! Form::model($derajat, ['route' => ['derajat.update', $derajat->id], 'method' => 'put']) !!}
 				<div class="panel-body">

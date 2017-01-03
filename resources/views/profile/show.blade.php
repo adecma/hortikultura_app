@@ -4,7 +4,7 @@
 	<div class="col-md-12">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				Profil > Show
+				Profil
 			</div>
 			<div class="panel-body">
 				<dl class="dl-horizontal">
@@ -12,8 +12,6 @@
 					<dd>{{ $user->name }}</dd>
 					<dt>E-mail</dt>
 					<dd>{{ $user->email }}</dd>
-					<dt>Updated</dt>
-					<dd>{{ $user->updated_at->diffForHumans() }}</dd>
 				</dl>
 			</div>
 

@@ -3,7 +3,7 @@
 @section('content')
 	<div class="col-md-12">
 		<div class="panel panel-primary">
-			<div class="panel-heading"><i class="fa fa-plus"></i> Variable > Edit</div>
+			<div class="panel-heading"><i class="fa fa-plus"></i> Master Variable > Edit</div>
 			
 			{!! Form::model($variable, ['route' => ['variable.update', $variable->id], 'method' => 'put']) !!}
 				<div class="panel-body">

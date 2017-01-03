@@ -3,7 +3,7 @@
 @section('content')
 	<div class="col-md-12">
 		<div class="panel panel-primary">
-			<div class="panel-heading"><i class="fa fa-plus"></i> Derajat > Create</div>
+			<div class="panel-heading"><i class="fa fa-plus"></i> Master Derajat > Tambah</div>
 			
 			{!! Form::open(['route' => 'derajat.store']) !!}
 				<div class="panel-body">

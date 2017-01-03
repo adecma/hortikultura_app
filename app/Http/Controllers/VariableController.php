@@ -32,9 +32,6 @@ class VariableController extends Controller
                         'form_url' => route('variable.destroy', $variables->id),
                         'edit_url' => route('variable.edit', $variables->id),
                     ]);
-                })
-                ->editColumn('updated_at', function($variables){
-                    return $variables->updated_at->diffForHumans();
                 });
 
             if ($keyword = $request->get('search')['value']) {
@@ -47,7 +44,6 @@ class VariableController extends Controller
         $html = $htmlBuilder
             ->addcolumn(['data' => 'nomor', 'name' => 'nomor', 'title' => 'No.'])
             ->addcolumn(['data' => 'name', 'name' => 'name', 'title' => 'Nama'])
-            ->addcolumn(['data' => 'updated_at', 'name' => 'updated_at', 'title' => 'Updated'])
             ->addcolumn(['data' => 'action', 'name' => 'action', 'title' => 'action', 'orderable' => false, 'searchable' => false]);
 
         return view('master.variable.index', compact('html'));

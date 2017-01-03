@@ -35,9 +35,6 @@ class DerajatController extends Controller
                         'form_url' => route('derajat.destroy', $derajats->id),
                         'edit_url' => route('derajat.edit', $derajats->id),
                     ]);
-                })
-                ->editColumn('updated_at', function($derajats){
-                    return $derajats->updated_at->diffForHumans();
                 });
 
             if ($keyword = $request->get('search')['value']) {
@@ -53,7 +50,6 @@ class DerajatController extends Controller
             ->addcolumn(['data' => 'rendah', 'name' => 'rendah', 'title' => 'Rendah'])
             ->addcolumn(['data' => 'sedang', 'name' => 'sedang', 'title' => 'Sedang'])
             ->addcolumn(['data' => 'tinggi', 'name' => 'tinggi', 'title' => 'Tinggi'])
-            ->addcolumn(['data' => 'updated_at', 'name' => 'updated_at', 'title' => 'Updated'])
             ->addcolumn(['data' => 'action', 'name' => 'action', 'title' => 'action', 'orderable' => false, 'searchable' => false]);
 
         return view('master.derajat.index', compact('html'));

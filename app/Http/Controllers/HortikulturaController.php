@@ -31,9 +31,6 @@ class HortikulturaController extends Controller
                         'form_url' => route('hortikultura.destroy', $hortikulturas->id),
                         'edit_url' => route('hortikultura.edit', $hortikulturas->id),
                     ]);
-                })
-                ->editColumn('updated_at', function($hortikulturas){
-                    return $hortikulturas->updated_at->diffForHumans();
                 });
 
             if ($keyword = $request->get('search')['value']) {
@@ -46,7 +43,6 @@ class HortikulturaController extends Controller
         $html = $htmlBuilder
             ->addcolumn(['data' => 'nomor', 'name' => 'nomor', 'title' => 'No.'])
             ->addcolumn(['data' => 'name', 'name' => 'name', 'title' => 'Nama'])
-            ->addcolumn(['data' => 'updated_at', 'name' => 'updated_at', 'title' => 'Updated'])
             ->addcolumn(['data' => 'action', 'name' => 'action', 'title' => 'action', 'orderable' => false, 'searchable' => false]);
 
         return view('master.hortikultura.index', compact('html'));
