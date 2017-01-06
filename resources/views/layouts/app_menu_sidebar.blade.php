@@ -8,5 +8,5 @@
 <div class="list-group">
     <a href="#" class="list-group-item disabled"><strong>Menu Lainnya</strong></a>
     <a href="{{ route('analisa.variable') }}" class="list-group-item {!! substr(Route::currentRouteName(), 0, 16) == 'analisa.variable' ? 'active' : '' !!}">Analisa Data</a>
-    <a href="#" class="list-group-item">Histori Konsultasi</a>
+    <a href="{{ route('riwayat.index') }}" class="list-group-item {!! substr(Route::currentRouteName(), 0, 7) == 'riwayat' ? 'active' : '' !!}">Histori Konsultasi</a>
 </div>

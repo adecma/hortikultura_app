@@ -29,9 +29,12 @@ Route::get('/kontak', function () {
     return view('static.kontak');
 })->name('kontak');
 
-Route::get('/konsultasi', function(){
-    return view('konsultasi.index');
-})->name('konsultasi.index');
+Route::get('/konsultasi', 'AnalisaController@konsultasi')
+    ->name('konsultasi.index');
+Route::post('/konsultasi/result/{tag}', 'AnalisaController@result')
+    ->name('konsultasi.result');
+Route::get('/konsultasi/result/{id}/topdf', 'AnalisaController@resultToPDF')
+    ->name('konsultasi.topdf');
 
 Route::group(['middleware' => 'auth'], function() {
 	//beranda
@@ -61,4 +64,12 @@ Route::group(['middleware' => 'auth'], function() {
         ->name('analisa.topdf');
     Route::get('/analisa_variable', 'AnalisaController@variable')
         ->name('analisa.variable');
+
+    //riwayat
+    Route::get('/riwayat/topdf/{time}', 'RiwayatController@toPDF')
+        ->name('riwayat.topdf');
+    Route::get('/riwayat', 'RiwayatController@index')
+        ->name('riwayat.index');
+    Route::delete('/riwayat/{id}', 'RiwayatController@destroy')
+        ->name('riwayat.destroy');
 });
