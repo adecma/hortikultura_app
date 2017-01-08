@@ -35,7 +35,7 @@ class Variable extends Model
     							THEN 0
     						WHEN hortikultura_variable.nilai >= var.rendah AND hortikultura_variable.nilai <= var.sedang 
     							THEN (hortikultura_variable.nilai - var.rendah) / (var.sedang - var.rendah)
-    						ELSE (var.tinggi - hortikultura_variable.nilai) / (var.tinggi - var.rendah)
+    						ELSE (var.tinggi - hortikultura_variable.nilai) / (var.tinggi - var.sedang)
     						END as hit_sedang"), 
     			DB::raw("CASE WHEN hortikultura_variable.nilai <= var.sedang 
     							THEN 0

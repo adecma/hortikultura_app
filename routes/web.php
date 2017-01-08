@@ -25,9 +25,9 @@ Route::get('/about', function () {
     return view('static.about');
 })->name('about');
 
-Route::get('/kontak', function () {
+/*Route::get('/kontak', function () {
     return view('static.kontak');
-})->name('kontak');
+})->name('kontak');*/
 
 Route::get('/konsultasi', 'AnalisaController@konsultasi')
     ->name('konsultasi.index');

@@ -50,7 +50,7 @@ class DerajatController extends Controller
             ->addcolumn(['data' => 'rendah', 'name' => 'rendah', 'title' => 'Rendah'])
             ->addcolumn(['data' => 'sedang', 'name' => 'sedang', 'title' => 'Sedang'])
             ->addcolumn(['data' => 'tinggi', 'name' => 'tinggi', 'title' => 'Tinggi'])
-            ->addcolumn(['data' => 'action', 'name' => 'action', 'title' => 'action', 'orderable' => false, 'searchable' => false]);
+            ->addcolumn(['data' => 'action', 'name' => 'action', 'title' => 'Aksi', 'orderable' => false, 'searchable' => false]);
 
         return view('master.derajat.index', compact('html'));
     }

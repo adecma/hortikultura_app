@@ -43,7 +43,7 @@ class HortikulturaController extends Controller
         $html = $htmlBuilder
             ->addcolumn(['data' => 'nomor', 'name' => 'nomor', 'title' => 'No.'])
             ->addcolumn(['data' => 'name', 'name' => 'name', 'title' => 'Nama'])
-            ->addcolumn(['data' => 'action', 'name' => 'action', 'title' => 'action', 'orderable' => false, 'searchable' => false]);
+            ->addcolumn(['data' => 'action', 'name' => 'action', 'title' => 'Aksi', 'orderable' => false, 'searchable' => false]);
 
         return view('master.hortikultura.index', compact('html'));
     }

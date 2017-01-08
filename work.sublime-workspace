@@ -367,17 +367,11 @@
 		"/C/laragon/www/hortikultura_app",
 		"/C/laragon/www/hortikultura_app/app",
 		"/C/laragon/www/hortikultura_app/app/Http",
-		"/C/laragon/www/hortikultura_app/app/Http/Controllers",
 		"/C/laragon/www/hortikultura_app/database",
 		"/C/laragon/www/hortikultura_app/database/migrations",
 		"/C/laragon/www/hortikultura_app/resources",
-		"/C/laragon/www/hortikultura_app/resources/views",
-		"/C/laragon/www/hortikultura_app/resources/views/analisa",
-		"/C/laragon/www/hortikultura_app/resources/views/konsultasi",
-		"/C/laragon/www/hortikultura_app/resources/views/master",
-		"/C/laragon/www/hortikultura_app/resources/views/master/derajat",
-		"/C/laragon/www/hortikultura_app/resources/views/master/hortikultura",
-		"/C/laragon/www/hortikultura_app/resources/views/riwayat"
+		"/C/laragon/www/hortikultura_app/resources/lang",
+		"/C/laragon/www/hortikultura_app/resources/views"
 	],
 	"file_history":
 	[
@@ -814,7 +808,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 336.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

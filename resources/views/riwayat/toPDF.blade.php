@@ -38,10 +38,8 @@
                             <table class="tg">
                                 <thead>
                                     <tr>
-                                        <th class="tg-3wr7">No</th>
-                                        <th class="tg-3wr7">Nama</th>
-                                        <th class="tg-3wr7">Variable dipilih</th>
-                                        <th class="tg-3wr7">Rekomendasi</th>
+                                        <th class="tg-3wr7" width="3%">No</th>
+                                        <th class="tg-3wr7" colspan="3" width="97%"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -51,19 +49,28 @@
                                             $rekomendasi = unserialize($r->rekomendasi);
                                         @endphp
                                         <tr>
-                                            <td class="tg-rv4w" width="10%">{{ $no++ }}</td>
-                                            <td class="tg-rv4w" width="20%">
-                                                {{ $r->name}} <br>
-                                                {{ $r->created_at->format('d F Y') }}
-                                            </td>
-                                            <td class="tg-rv4w" width="35%">
+                                            <td class="tg-ti5e" width="3%">{{ $no++ }}</td> 
+                                            <td class="tg-rv4w" width="5%">Nama</td>
+                                            <td class="tg-rv4w" width="92%" colspan="2">{{ $r->name}}</td>                   
+                                        </tr>
+                                        <tr>
+                                            <td class="tg-ti5e" width="3%"></td>
+                                            <td class="tg-rv4w" width="5%">Tanggal</td>
+                                            <td class="tg-rv4w" width="92%" colspan="2">{{ $r->created_at->format('d F Y') }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tg-ti5e" width="3%"></td>
+                                            <td class="tg-rv4w" width="5%"></td>
+                                            <td class="tg-rv4w" width="46%">
+                                                <center><strong>Variabel Yang Dipilih</strong></center>
                                                 <ul>
                                                     @foreach($variable as $var)
                                                         <li>{{ $var['nameVar'] }}</li>
                                                     @endforeach
                                                 </ul>
                                             </td>
-                                            <td class="tg-rv4w" width="35%">
+                                            <td class="tg-rv4w" width="46%">
+                                                <center><strong>Hasil Rekomendasi</strong></center>
                                                 <ul>
                                                     @foreach($rekomendasi as $rekom)
                                                         @if($rekom['strength'] != 0)

@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div style="font-family:Arial; font-size:12px;">
-                        <center><h3>Laporan Analisa Data</h3></center>
+                        <center><h3>Laporan Analisa Data Variabel</h3></center>
                     </div>
                     
                     <ol type="A">

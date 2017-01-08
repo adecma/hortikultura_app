@@ -73,29 +73,38 @@ class AnalisaController extends Controller
                 $set2[$i]['sedang'] = $value1->variables[$i]->derajat->sedang;
                 $set2[$i]['tinggi'] = $value1->variables[$i]->derajat->tinggi;
 
-                if($request->input('V-'.$i) == 'rendah'){
+                if($request->input('V-'.$variables[$i]->id) == 'rendah'){
                     if ($value1->variables[$i]->pivot->nilai <= $value1->variables[$i]->derajat->rendah) {
                         $set2[$i]['hitNilai'] = 1;
+                        $set2[$i]['jenis'] = $request->input('V-'.$variables[$i]->id);
                     }elseif ($value1->variables[$i]->pivot->nilai >= $value1->variables[$i]->derajat->rendah AND $value1->variables[$i]->pivot->nilai <= $value1->variables[$i]->derajat->sedang) {
                         $set2[$i]['hitNilai'] = ($value1->variables[$i]->derajat->sedang - $value1->variables[$i]->pivot->nilai)/($value1->variables[$i]->derajat->sedang - $value1->variables[$i]->derajat->rendah);
+                        $set2[$i]['jenis'] = $request->input('V-'.$variables[$i]->id);
                     }else{
                        $set2[$i]['hitNilai'] = 0; 
+                       $set2[$i]['jenis'] = $request->input('V-'.$variables[$i]->id);
                     }                 
-                }elseif($request->input('V-'.$i) == 'sedang'){
+                }elseif($request->input('V-'.$variables[$i]->id) == 'sedang'){
                     if ($value1->variables[$i]->pivot->nilai <= $value1->variables[$i]->derajat->rendah OR $value1->variables[$i]->pivot->nilai >= $value1->variables[$i]->derajat->tinggi) {
                         $set2[$i]['hitNilai'] = 0;
+                        $set2[$i]['jenis'] = $request->input('V-'.$variables[$i]->id);
                     }elseif ($value1->variables[$i]->pivot->nilai >= $value1->variables[$i]->derajat->rendah AND $value1->variables[$i]->pivot->nilai <= $value1->variables[$i]->derajat->sedang) {
                         $set2[$i]['hitNilai'] = ($value1->variables[$i]->pivot->nilai - $value1->variables[$i]->derajat->rendah)/($value1->variables[$i]->derajat->sedang - $value1->variables[$i]->derajat->rendah);
+                        $set2[$i]['jenis'] = $request->input('V-'.$variables[$i]->id);
                     }else{
                        $set2[$i]['hitNilai'] = ($value1->variables[$i]->derajat->tinggi - $value1->variables[$i]->pivot->nilai)/($value1->variables[$i]->derajat->tinggi - $value1->variables[$i]->derajat->sedang); 
+                       $set2[$i]['jenis'] = $request->input('V-'.$variables[$i]->id);
                     }
                 }else{
                     if ($value1->variables[$i]->pivot->nilai <= $value1->variables[$i]->derajat->sedang) {
                         $set2[$i]['hitNilai'] = 0;
+                        $set2[$i]['jenis'] = $request->input('V-'.$variables[$i]->id);
                     }elseif ($value1->variables[$i]->pivot->nilai >= $value1->variables[$i]->derajat->sedang AND $value1->variables[$i]->pivot->nilai <= $value1->variables[$i]->derajat->tinggi) {
                         $set2[$i]['hitNilai'] = ($value1->variables[$i]->pivot->nilai - $value1->variables[$i]->derajat->sedang)/($value1->variables[$i]->derajat->tinggi - $value1->variables[$i]->derajat->sedang);
+                        $set2[$i]['jenis'] = $request->input('V-'.$variables[$i]->id);
                     }else{
                        $set2[$i]['hitNilai'] = 1; 
+                       $set2[$i]['jenis'] = $request->input('V-'.$variables[$i]->id);
                     }
                 }
             }
@@ -128,6 +137,8 @@ class AnalisaController extends Controller
         
         $no = 1;
 
+        //dd($result);
+
         return view('konsultasi.result', compact('resultSortDesc', 'no', 'nama', 'selectVar', 'riwayat'));
     }
 
@@ -141,5 +152,7 @@ class AnalisaController extends Controller
             ->setPaper('a4', 'potrait');
  
         return $pdf->stream('report_konsultasi-'.$id.'.pdf');
+
+        //return view('konsultasi.toPDF',compact('riwayat', 'no'));
     }
 }

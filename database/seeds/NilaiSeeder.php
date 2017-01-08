@@ -16,14 +16,14 @@ class NilaiSeeder extends Seeder
         $var1 = Variable::findOrFail(1);
         $var1->hortikulturas()->attach([
         	1 => ['nilai' => 900], 
-        	2 => ['nilai' => 200], 
+        	2 => ['nilai' => 700], 
         	3 => ['nilai' => 600],
         	4 => ['nilai' => 1200],
         	5 => ['nilai' => 500], 
         	6 => ['nilai' => 800], 
         	7 => ['nilai' => 1200], 
         	8 => ['nilai' => 1500], 
-        	9 => ['nilai' => 1500], 
+        	9 => ['nilai' => 500], 
         	10 => ['nilai' => 2000]
         ]);
 

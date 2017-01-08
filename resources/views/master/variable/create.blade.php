@@ -3,7 +3,7 @@
 @section('content')
 	<div class="col-md-12">
 		<div class="panel panel-primary">
-			<div class="panel-heading"><i class="fa fa-plus"></i> Master Variable > Tambah</div>
+			<div class="panel-heading"><i class="fa fa-plus"></i> Master Variabel > Tambah</div>
 			
 			{!! Form::open(['route' => 'variable.store']) !!}
 				<div class="panel-body">

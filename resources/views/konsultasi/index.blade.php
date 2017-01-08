@@ -21,26 +21,36 @@
 					
 					<hr>
 
-					<p class="text-center">Pilih Variable</p>
+					<p class="text-center">Pilih Variabel</p>
 
 					@foreach($variables as $var)
 						<div class="form-group {{ $errors->has('V-'.$var->id) ? ' has-error' : '' }}">
 							<label>{{ $var->name }}</label> <br>
-							<label class="radio-inline">
-								{{ Form::radio('V-'.$var->id, 'rendah') }} Rendah
-							</label>
-							<label class="radio-inline">
-								{{ Form::radio('V-'.$var->id, 'sedang') }} Sedang
-							</label>
-							<label class="radio-inline">
-								{{ Form::radio('V-'.$var->id, 'tinggi') }} Tinggi
-							</label>
+							<div class="well">
+								<div class="row">
+									<div class="col-md-4">
+										<label class="radio-inline">
+											{{ Form::radio('V-'.$var->id, 'rendah') }} Rendah
+										</label>
+									</div>
+									<div class="col-md-4">
+										<label class="radio-inline">
+											{{ Form::radio('V-'.$var->id, 'sedang') }} Sedang
+										</label>
+									</div>
+									<div class="col-md-4">
+										<label class="radio-inline">
+											{{ Form::radio('V-'.$var->id, 'tinggi') }} Tinggi
+										</label>
+									</div>
 
-							@if ($errors->has('V-'.$var->id))
-		                        <span class="help-block">
-		                            <strong>{{ $errors->first('V-'.$var->id) }}</strong>
-		                        </span>
-		                    @endif
+									@if ($errors->has('V-'.$var->id))
+				                        <span class="help-block">
+				                            <strong>{{ $errors->first('V-'.$var->id) }}</strong>
+				                        </span>
+				                    @endif
+			                    </div>
+			                </div>
 						</div>
 					@endforeach
 				</div>

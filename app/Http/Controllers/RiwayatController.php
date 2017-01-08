@@ -51,10 +51,10 @@ class RiwayatController extends Controller
         $html = $htmlBuilder
             ->addcolumn(['data' => 'nomor', 'name' => 'nomor', 'title' => 'No.'])
             ->addcolumn(['data' => 'name', 'name' => 'name', 'title' => 'Nama'])
-            ->addcolumn(['data' => 'variable', 'name' => 'variable', 'title' => 'Variable dipilih', 'orderable' => false, 'searchable' => false])
+            ->addcolumn(['data' => 'variable', 'name' => 'variable', 'title' => 'Variabel dipilih', 'orderable' => false, 'searchable' => false])
             ->addcolumn(['data' => 'rekomendasi', 'name' => 'rekomendasi', 'title' => 'Rekomendasi', 'orderable' => false, 'searchable' => false])
             ->addcolumn(['data' => 'created_at', 'name' => 'created_at', 'title' => 'Tanggal', 'searchable' => false])
-            ->addcolumn(['data' => 'action', 'name' => 'action', 'title' => 'action', 'orderable' => false, 'searchable' => false]);
+            ->addcolumn(['data' => 'action', 'name' => 'action', 'title' => 'Aksi', 'orderable' => false, 'searchable' => false]);
 
         return view('riwayat.index', compact('html'));
     }
@@ -80,5 +80,6 @@ class RiwayatController extends Controller
             ->setPaper('a4', 'potrait');
  
         return $pdf->stream('report_riwayat-'.$time.'.pdf');
+        //return view('riwayat.toPDF',compact('riwayats', 'no'));
     }
 }

@@ -31,23 +31,32 @@
             <div class="row">
                 <div class="col-md-12">
                     <div style="font-family:Arial; font-size:12px;">
-                        <center><h3>Laporan Konsultasi oleh {{ $riwayat->name }} <br> Pada tanggal {{ $riwayat->created_at->format('d F Y') }}</h3></center>
+                        <center><h3>Laporan Konsultasi <br> {{ $riwayat->created_at->format('d F Y') }}</h3></center>
                     </div>
-                    
+                    <hr> <br>
                     <div class="">
-                        <h4>Variable dipilih</h4>
-                        <ul>
+                        <strong>Nama : </strong> {{ $riwayat->name }}<br><br>
+                        
+                        <strong>Variabel dipilih :</strong>
+                        <table width="100%">
                             @php
-                                $variable = unserialize($riwayat->variable);
+                                $variable = collect(unserialize($riwayat->variable));
                                 $rekomendasi = unserialize($riwayat->rekomendasi);
                             @endphp
 
-                            @foreach($variable as $var)
-                                <li>{{ $var['nameVar'] }}</li>
+                            @foreach($variable->chunk(3) as $chunk)
+                                <tr>
+                                    <td width="5%"></td>
+                                    @foreach($chunk as $var)
+                                        <td width="30%"> <li>{{ $var['nameVar'] }}</li></td>
+                                    @endforeach
+                                </tr>
                             @endforeach
-                        </ul>
+                        </table>
 
-                        <h4>Hasil Rekomendasi</h4>
+                        <br>
+
+                        <strong>Hasil Rekomendasi :</strong> <br> <br>
                         <table class="tg">
                             <thead>
                                 <tr>

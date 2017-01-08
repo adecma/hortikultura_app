@@ -16,7 +16,7 @@ class DerajatSeeder extends Seeder
         	['rendah' => 100, 'sedang' => 600, 'tinggi' => 1000, 'derajat_id' => 1],
         	['rendah' => 250, 'sedang' => 1375, 'tinggi' => 2500, 'derajat_id' => 2],
         	['rendah' => 10, 'sedang' => 15, 'tinggi' => 25, 'derajat_id' => 3],
-        	['rendah' => 10, 'sedang' => 15, 'tinggi' => 25, 'derajat_id' => 4],
+        	['rendah' => 10, 'sedang' => 15, 'tinggi' => 20, 'derajat_id' => 4],
         	['rendah' => 20, 'sedang' => 30, 'tinggi' => 40, 'derajat_id' => 5],
         	['rendah' => 5.5, 'sedang' => 6.25, 'tinggi' => 7.0, 'derajat_id' => 6],
         ];
