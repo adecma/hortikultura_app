@@ -31,7 +31,40 @@
             <div class="row">
                 <div class="col-md-12">
                     <div style="font-family:Arial; font-size:12px;">
-                        <center><h3>Laporan Konsultasi <br> {{ $riwayat->created_at->format('d F Y') }}</h3></center>
+                        @php
+                            if ($riwayat->created_at->format('n') == 1) {
+                                $bulan = 'Januari';
+                            }elseif ($riwayat->created_at->format('n') == 2) {
+                                $bulan = 'Februari';
+                            }elseif ($riwayat->created_at->format('n') == 3) {
+                                $bulan = 'Maret';
+                            }elseif ($riwayat->created_at->format('n') == 4) {
+                                $bulan = 'April';
+                            }elseif ($riwayat->created_at->format('n') == 5) {
+                                $bulan = 'Mei';
+                            }elseif ($riwayat->created_at->format('n') == 6) {
+                                $bulan = 'Juni';
+                            }elseif ($riwayat->created_at->format('n') == 7) {
+                                $bulan = 'Juli';
+                            }elseif ($riwayat->created_at->format('n') == 8) {
+                                $bulan = 'Agustus';
+                            }elseif ($riwayat->created_at->format('n') == 9) {
+                                $bulan = 'September';
+                            }elseif ($riwayat->created_at->format('n') == 10) {
+                                $bulan = 'Oktober';
+                            }elseif ($riwayat->created_at->format('n') == 11) {
+                                $bulan = 'November';
+                            }else{
+                                $bulan = 'Desember';
+                            }
+                        @endphp
+                              
+                        <center>
+                            <h3>
+                                Laporan Konsultasi <br> 
+                                {{ $riwayat->created_at->format('d').' '.$bulan.' '.$riwayat->created_at->format('Y') }}
+                            </h3>
+                        </center>
                     </div>
                     <hr> <br>
                     <div class="">

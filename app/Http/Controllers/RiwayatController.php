@@ -32,8 +32,33 @@ class RiwayatController extends Controller
             		return view('riwayat._rekomendasi', compact('rekomendasi'));
             	})
             	->editColumn('created_at', function($riwayats){
-            		
-            		return $riwayats->created_at->format('d F Y');
+            		if ($riwayats->created_at->format('n') == 1) {
+                        $bulan = 'Januari';
+                    }elseif ($riwayats->created_at->format('n') == 2) {
+                        $bulan = 'Februari';
+                    }elseif ($riwayats->created_at->format('n') == 3) {
+                        $bulan = 'Maret';
+                    }elseif ($riwayats->created_at->format('n') == 4) {
+                        $bulan = 'April';
+                    }elseif ($riwayats->created_at->format('n') == 5) {
+                        $bulan = 'Mei';
+                    }elseif ($riwayats->created_at->format('n') == 6) {
+                        $bulan = 'Juni';
+                    }elseif ($riwayats->created_at->format('n') == 7) {
+                        $bulan = 'Juli';
+                    }elseif ($riwayats->created_at->format('n') == 8) {
+                        $bulan = 'Agustus';
+                    }elseif ($riwayats->created_at->format('n') == 9) {
+                        $bulan = 'September';
+                    }elseif ($riwayats->created_at->format('n') == 10) {
+                        $bulan = 'Oktober';
+                    }elseif ($riwayats->created_at->format('n') == 11) {
+                        $bulan = 'November';
+                    }else{
+                        $bulan = 'Desember';
+                    }
+                    
+            		return $riwayats->created_at->format('d').' '.$bulan.' '.$riwayats->created_at->format('Y');
             	})
                 ->addColumn('action', function($riwayats){
                     return view('riwayat._aksi', [

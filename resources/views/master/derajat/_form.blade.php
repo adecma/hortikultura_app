@@ -22,7 +22,7 @@
 
 <div class="form-group {{ $errors->has('sedang') ? 'has-error' : '' }}">
 	{{ Form::label('sedang', 'Sedang') }}
-	{{ Form::number('sedang', null, ['class' => 'form-control', 'placeholder' => 'Nilai sedang', 'autocomplete' => 'off']) }}
+	{{ Form::text('sedang', null, ['class' => 'form-control', 'placeholder' => 'Nilai sedang', 'autocomplete' => 'off']) }}
 
 	@if($errors->has('sedang'))
 		<span class="help-block">
@@ -33,7 +33,7 @@
 
 <div class="form-group {{ $errors->has('tinggi') ? 'has-error' : '' }}">
 	{{ Form::label('tinggi', 'Tinggi') }}
-	{{ Form::number('tinggi', null, ['class' => 'form-control', 'placeholder' => 'Nilai tinggi', 'autocomplete' => 'off']) }}
+	{{ Form::text('tinggi', null, ['class' => 'form-control', 'placeholder' => 'Nilai tinggi', 'autocomplete' => 'off']) }}
 
 	@if($errors->has('tinggi'))
 		<span class="help-block">

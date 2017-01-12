@@ -56,7 +56,37 @@
                                         <tr>
                                             <td class="tg-ti5e" width="3%"></td>
                                             <td class="tg-rv4w" width="5%">Tanggal</td>
-                                            <td class="tg-rv4w" width="92%" colspan="2">{{ $r->created_at->format('d F Y') }}</td>
+                                            <td class="tg-rv4w" width="92%" colspan="2">
+                                                @php
+                                                    if ($r->created_at->format('n') == 1) {
+                                                        $bulan = 'Januari';
+                                                    }elseif ($r->created_at->format('n') == 2) {
+                                                        $bulan = 'Februari';
+                                                    }elseif ($r->created_at->format('n') == 3) {
+                                                        $bulan = 'Maret';
+                                                    }elseif ($r->created_at->format('n') == 4) {
+                                                        $bulan = 'April';
+                                                    }elseif ($r->created_at->format('n') == 5) {
+                                                        $bulan = 'Mei';
+                                                    }elseif ($r->created_at->format('n') == 6) {
+                                                        $bulan = 'Juni';
+                                                    }elseif ($r->created_at->format('n') == 7) {
+                                                        $bulan = 'Juli';
+                                                    }elseif ($r->created_at->format('n') == 8) {
+                                                        $bulan = 'Agustus';
+                                                    }elseif ($r->created_at->format('n') == 9) {
+                                                        $bulan = 'September';
+                                                    }elseif ($r->created_at->format('n') == 10) {
+                                                        $bulan = 'Oktober';
+                                                    }elseif ($r->created_at->format('n') == 11) {
+                                                        $bulan = 'November';
+                                                    }else{
+                                                        $bulan = 'Desember';
+                                                    }
+                                                @endphp
+                                                
+                                                {{ $r->created_at->format('d').' '.$bulan.' '.$r->created_at->format('Y') }}
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="tg-ti5e" width="3%"></td>
