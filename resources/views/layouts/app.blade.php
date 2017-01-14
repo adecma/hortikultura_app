@@ -11,8 +11,8 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ elixir('css/all.css') }}">
+    <link href="{{ url('/css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url('css/all.css') }}">
     @stack('css')
 
     <!-- Scripts -->
@@ -122,8 +122,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
-    <script src="{{ elixir('js/all.js') }}"></script>
+    <script src="{{ url('/js/app.js') }}"></script>
+    <script src="{{ url('js/all.js') }}"></script>
     @stack('js')
 </body>
 </html>
