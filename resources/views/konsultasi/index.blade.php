@@ -30,17 +30,20 @@
 								<div class="row">
 									<div class="col-md-4">
 										<label class="radio-inline">
-											{{ Form::radio('V-'.$var->id, 'rendah') }} Rendah
+											{{ Form::radio('V-'.$var->id, 'rendah') }} Rendah <br>
+											{{ $var->derajat->ket_rendah }}
 										</label>
 									</div>
 									<div class="col-md-4">
 										<label class="radio-inline">
-											{{ Form::radio('V-'.$var->id, 'sedang') }} Sedang
+											{{ Form::radio('V-'.$var->id, 'sedang') }} Sedang <br>
+											{{ $var->derajat->ket_sedang }}
 										</label>
 									</div>
 									<div class="col-md-4">
 										<label class="radio-inline">
-											{{ Form::radio('V-'.$var->id, 'tinggi') }} Tinggi
+											{{ Form::radio('V-'.$var->id, 'tinggi') }} Tinggi <br>
+											{{ $var->derajat->ket_tinggi }}
 										</label>
 									</div>
 

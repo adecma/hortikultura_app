@@ -77,15 +77,21 @@ class DerajatController extends Controller
     {
         $this->validate($request, [
             'rendah' => 'required|min:1|max:7',
+            'ket_rendah' => 'required|min:1|max:150',
             'sedang' => 'required|min:1|max:7',
+            'ket_sedang' => 'required|min:1|max:150',
             'tinggi' => 'required|min:1|max:7',
+            'ket_tinggi' => 'required|min:1|max:150',
             'variable_list' => 'required|numeric|exists:variables,id'
         ]);
 
         $derajat = new Derajat;
         $derajat->rendah = $request->input('rendah');
+        $derajat->ket_rendah = $request->input('ket_rendah');
         $derajat->sedang = $request->input('sedang');
+        $derajat->ket_sedang = $request->input('ket_sedang');
         $derajat->tinggi = $request->input('tinggi');
+        $derajat->ket_tinggi = $request->input('ket_tinggi');
         $derajat->variable_id = $request->input('variable_list');
         $derajat->save(); 
 
@@ -133,14 +139,20 @@ class DerajatController extends Controller
 
         $this->validate($request, [
             'rendah' => 'required|min:1|max:7',
+            'ket_rendah' => 'required|min:1|max:150',
             'sedang' => 'required|min:1|max:7',
+            'ket_sedang' => 'required|min:1|max:150',
             'tinggi' => 'required|min:1|max:7',
+            'ket_tinggi' => 'required|min:1|max:150',
             'variable_list' => 'required|numeric|exists:variables,id'
         ]);
         
         $derajat->rendah = $request->input('rendah');
+        $derajat->ket_rendah = $request->input('ket_rendah');
         $derajat->sedang = $request->input('sedang');
+        $derajat->ket_sedang = $request->input('ket_sedang');
         $derajat->tinggi = $request->input('tinggi');
+        $derajat->ket_tinggi = $request->input('ket_tinggi');
         $derajat->variable_id = $request->input('variable_list');
         $derajat->save();
 
