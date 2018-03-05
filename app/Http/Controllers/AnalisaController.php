@@ -47,6 +47,7 @@ class AnalisaController extends Controller
 
         foreach ($variables as $var) {
             $rules['V-'.$var->id] = 'required';
+            $message["V-{$var->id}.required"] = "Bidang {$var->name} diperlukan.";
 
             $selectVar[$var->id]['nameVar'] = $var->name.' '.$request->input('V-'.$var->id);
         }
@@ -55,7 +56,7 @@ class AnalisaController extends Controller
 
         $rules['nama'] = 'required';
 
-        $this->validate($request, $rules);
+        $this->validate($request, $rules, $message);
 
         $hortikulturas = Hortikultura::with(['variables' => function($v){
                 $v->with('derajat');

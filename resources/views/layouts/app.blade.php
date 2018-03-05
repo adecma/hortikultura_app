@@ -92,7 +92,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <div class="lead"><strong>Rekomendasi Tanaman Hortikultura <br> Menggunakan Metode Fuzzy Tahani</strong></div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <img src="{{ url('/images/bjb.jpeg') }}" style="height:75px; margin:0 auto; display: inline;" alt="Kota Banjarbaru" class="img-responsive">
+                            </td>
+                            <td>
+                                <div class="lead" style="margin-bottom: 5px;">
+                                    <strong>Rekomendasi Tanaman Hortikultura Menggunakan Metode</strong> <br> 
+                                    <strong>Fuzzy Tahani</strong> <br>
+                                </div>
+                                <label>Jl. Pangeran Suriansyah Banjarbaru. Telp/Fax (0511) 4781050</label>
+                            </td>
+                        </tr>
+                    </table>                       
                 </div>
             </div>
         </div>
