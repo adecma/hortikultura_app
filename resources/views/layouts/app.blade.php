@@ -95,7 +95,7 @@
                     <table class="table">
                         <tr>
                             <td>
-                                <img src="{{ url('/images/bjb.jpeg') }}" style="height:75px; margin:0 auto; display: inline;" alt="Kota Banjarbaru" class="img-responsive">
+                                <img src="{{ url('/images/bjb.jpeg') }}" style="height:100px; width: auto; margin:0 auto; display: inline;" alt="Kota Banjarbaru" class="img-responsive">
                             </td>
                             <td>
                                 <div class="lead" style="margin-bottom: 5px;">
