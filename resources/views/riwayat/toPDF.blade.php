@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div style="font-family:Arial; font-size:12px;">
-                        <center><h3>Laporan Riwayat Konsultasi</h3></center>
+                        <center><h3>Data Riwayat Konsultasi <br> Rekomendasi Tanaman Hortikultura</h3></center>
                     </div>
                     
                     <div class="">

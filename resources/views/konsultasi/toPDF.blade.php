@@ -61,7 +61,7 @@
                               
                         <center>
                             <h3>
-                                Laporan Konsultasi <br> 
+                                Hasil Rekomendasi Tanaman Hortikultura<br> 
                                 {{ $riwayat->created_at->format('d').' '.$bulan.' '.$riwayat->created_at->format('Y') }}
                             </h3>
                         </center>

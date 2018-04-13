@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div style="font-family:Arial; font-size:12px;">
-                        <center><h3>Laporan Variabel Hortikultura</h3></center>
+                        <center><h3>Data Variabel Hortikultura</h3></center>
                     </div>
                     
                     <div class="">
@@ -39,7 +39,7 @@
                                 <thead>
                                     <tr>
                                         <th class="tg-3wr7">No</th>
-                                        <th class="tg-3wr7">Variabel</th>
+                                        <th class="tg-3wr7">Nama Variabel</th>
                                     </tr>
                                 </thead>
                                 <tbody>
