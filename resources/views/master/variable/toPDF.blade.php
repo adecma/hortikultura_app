@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div style="font-family:Arial; font-size:12px;">
-                        <center><h3>Data Variabel Hortikultura</h3></center>
+                        <center><h3>Data Variabel Lahan</h3></center>
                     </div>
                     
                     <div class="">
