@@ -104,7 +104,7 @@
                                         <tr>
                                             <td class="tg-ti5e" width="10%">{{ $no++ }}</td>
                                             <td class="tg-rv4w" width="55%">{{ $rekom['nameHorti'] }}</td>
-                                            <td class="tg-ti5e" width="35%">{{ $rekom['strength'] }}</td>
+                                            <td class="tg-ti5e" width="35%">{{ round($rekom['strength'], 2, PHP_ROUND_HALF_UP) }}</td>
                                         </tr>
                                     @endif
                                 @endforeach

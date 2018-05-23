@@ -46,10 +46,11 @@ class AnalisaController extends Controller
         $variables = Variable::all();
 
         foreach ($variables as $var) {
-            $rules['V-'.$var->id] = 'required';
+            $rules['V-'.$var->id] = 'required|integer';
             $message["V-{$var->id}.required"] = "Bidang {$var->name} diperlukan.";
+            $message["V-{$var->id}.integer"] = "Bidang {$var->name} wajib nilai integer.";
 
-            $selectVar[$var->id]['nameVar'] = $var->name.' '.$request->input('V-'.$var->id);
+            $selectVar[$var->id]['nameVar'] = $var->name.':'.$request->input('V-'.$var->id);
         }
 
         $nama = $request->input('nama');
@@ -57,6 +58,23 @@ class AnalisaController extends Controller
         $rules['nama'] = 'required';
 
         $this->validate($request, $rules, $message);
+
+        // start convert value
+        $reqOriginal = $request->all();
+
+        foreach($variables as $varReq) {
+            if($request->input("V-{$varReq->id}") <= $varReq->derajat->rendah) {
+                $reqValue = 'rendah';
+            } elseif($request->input("V-{$varReq->id}") > $varReq->derajat->rendah 
+            && $request->input("V-{$varReq->id}") < $varReq->derajat->tinggi) {
+                $reqValue = 'sedang';
+            } else {
+                $reqValue = 'tinggi';
+            }
+            $reqModified['V-'.$varReq->id] = $reqValue;
+        }
+        $request->replace($reqModified);
+        // end convert value
 
         $hortikulturas = Hortikultura::with(['variables' => function($v){
                 $v->with('derajat');

@@ -28,23 +28,8 @@
 							<label>{{ $var->name }}</label> <br>
 							<div class="well">
 								<div class="row">
-									<div class="col-md-4">
-										<label class="radio-inline">
-											{{ Form::radio('V-'.$var->id, 'rendah') }} Rendah <br>
-											{{ $var->derajat->ket_rendah }}
-										</label>
-									</div>
-									<div class="col-md-4">
-										<label class="radio-inline">
-											{{ Form::radio('V-'.$var->id, 'sedang') }} Sedang <br>
-											{{ $var->derajat->ket_sedang }}
-										</label>
-									</div>
-									<div class="col-md-4">
-										<label class="radio-inline">
-											{{ Form::radio('V-'.$var->id, 'tinggi') }} Tinggi <br>
-											{{ $var->derajat->ket_tinggi }}
-										</label>
+									<div class="col-md-12">
+										{{ Form::number('V-'.$var->id, null, ['class' => 'form-control']) }}
 									</div>
 
 									@if ($errors->has('V-'.$var->id))

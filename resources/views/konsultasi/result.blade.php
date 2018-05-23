@@ -43,7 +43,7 @@
 									<tr>
 										<td>{{ $no++ }}</td>
 										<td>{{ $horti['nameHorti'] }}</td>
-										<td>{{ $horti['strength'] }}</td>
+										<td>{{ round($horti['strength'], 2, PHP_ROUND_HALF_UP) }}</td>
 									</tr>
 								@endif
 							@endforeach
